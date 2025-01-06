@@ -1,0 +1,216 @@
+Starting django_app as tntra
+[2025-01-04 15:53:30 +0530] [368670] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/home/tntra/django_project/.venv/run/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/tntra/django_project/sample_project
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1', '::1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: django_app
+  default_proc_name: sample_project.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7c3b00179b40>
+  on_reload: <function OnReload.on_reload at 0x7c3b00179c60>
+  when_ready: <function WhenReady.when_ready at 0x7c3b00179d80>
+  pre_fork: <function Prefork.pre_fork at 0x7c3b00179ea0>
+  post_fork: <function Postfork.post_fork at 0x7c3b00179fc0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7c3b0017a0e0>
+  worker_int: <function WorkerInt.worker_int at 0x7c3b0017a200>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7c3b0017a320>
+  pre_exec: <function PreExec.pre_exec at 0x7c3b0017a440>
+  pre_request: <function PreRequest.pre_request at 0x7c3b0017a560>
+  post_request: <function PostRequest.post_request at 0x7c3b0017a5f0>
+  child_exit: <function ChildExit.child_exit at 0x7c3b0017a710>
+  worker_exit: <function WorkerExit.worker_exit at 0x7c3b0017a830>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7c3b0017a950>
+  on_exit: <function OnExit.on_exit at 0x7c3b0017aa70>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7c3b0017ab90>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1', '::1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  permit_obsolete_folding: False
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  forwarder_headers: ['SCRIPT_NAME', 'PATH_INFO']
+  header_map: drop
+[2025-01-04 15:53:30 +0530] [368670] [INFO] Starting gunicorn 23.0.0
+[2025-01-04 15:53:30 +0530] [368670] [DEBUG] Arbiter booted
+[2025-01-04 15:53:30 +0530] [368670] [INFO] Listening at: unix:/home/tntra/django_project/.venv/run/gunicorn.sock (368670)
+[2025-01-04 15:53:30 +0530] [368670] [INFO] Using worker: sync
+[2025-01-04 15:53:30 +0530] [368673] [INFO] Booting worker with pid: 368673
+[2025-01-04 15:53:30 +0530] [368674] [INFO] Booting worker with pid: 368674
+[2025-01-04 15:53:30 +0530] [368675] [INFO] Booting worker with pid: 368675
+[2025-01-04 15:53:30 +0530] [368670] [DEBUG] 3 workers
+[2025-01-04 15:54:27 +0530] [368670] [INFO] Handling signal: term
+[2025-01-04 10:24:27 +0000] [368674] [INFO] Worker exiting (pid: 368674)
+[2025-01-04 10:24:27 +0000] [368675] [INFO] Worker exiting (pid: 368675)
+[2025-01-04 10:24:27 +0000] [368673] [INFO] Worker exiting (pid: 368673)
+[2025-01-04 15:54:27 +0530] [368670] [INFO] Shutting down: Master
+Starting django_app as tntra
+[2025-01-04 15:54:51 +0530] [368841] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/home/tntra/django_project/.venv/run/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/tntra/django_project/sample_project
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1', '::1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: django_app
+  default_proc_name: sample_project.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x78ac0f1e1b40>
+  on_reload: <function OnReload.on_reload at 0x78ac0f1e1c60>
+  when_ready: <function WhenReady.when_ready at 0x78ac0f1e1d80>
+  pre_fork: <function Prefork.pre_fork at 0x78ac0f1e1ea0>
+  post_fork: <function Postfork.post_fork at 0x78ac0f1e1fc0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x78ac0f1e20e0>
+  worker_int: <function WorkerInt.worker_int at 0x78ac0f1e2200>
+  worker_abort: <function WorkerAbort.worker_abort at 0x78ac0f1e2320>
+  pre_exec: <function PreExec.pre_exec at 0x78ac0f1e2440>
+  pre_request: <function PreRequest.pre_request at 0x78ac0f1e2560>
+  post_request: <function PostRequest.post_request at 0x78ac0f1e25f0>
+  child_exit: <function ChildExit.child_exit at 0x78ac0f1e2710>
+  worker_exit: <function WorkerExit.worker_exit at 0x78ac0f1e2830>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x78ac0f1e2950>
+  on_exit: <function OnExit.on_exit at 0x78ac0f1e2a70>
+  ssl_context: <function NewSSLContext.ssl_context at 0x78ac0f1e2b90>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1', '::1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  permit_obsolete_folding: False
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  forwarder_headers: ['SCRIPT_NAME', 'PATH_INFO']
+  header_map: drop
+[2025-01-04 15:54:51 +0530] [368841] [INFO] Starting gunicorn 23.0.0
+[2025-01-04 15:54:51 +0530] [368841] [DEBUG] Arbiter booted
+[2025-01-04 15:54:51 +0530] [368841] [INFO] Listening at: unix:/home/tntra/django_project/.venv/run/gunicorn.sock (368841)
+[2025-01-04 15:54:51 +0530] [368841] [INFO] Using worker: sync
+[2025-01-04 15:54:51 +0530] [368844] [INFO] Booting worker with pid: 368844
+[2025-01-04 15:54:51 +0530] [368845] [INFO] Booting worker with pid: 368845
+[2025-01-04 15:54:51 +0530] [368846] [INFO] Booting worker with pid: 368846
+[2025-01-04 15:54:51 +0530] [368841] [DEBUG] 3 workers
+[2025-01-04 16:03:41 +0530] [368841] [INFO] Handling signal: term
+[2025-01-04 10:33:41 +0000] [368845] [INFO] Worker exiting (pid: 368845)
+[2025-01-04 10:33:41 +0000] [368846] [INFO] Worker exiting (pid: 368846)
+[2025-01-04 10:33:41 +0000] [368844] [INFO] Worker exiting (pid: 368844)
+[2025-01-04 16:03:41 +0530] [368841] [INFO] Shutting down: Master
